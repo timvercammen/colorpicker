@@ -18,7 +18,7 @@ function render() {
 
 render();
 
-document.querySelector("#ul").addEventListener("change", (e) => {
+document.getElementById("ul").addEventListener("change", (e) => {
   if (e.target.classList.contains("newColor")) {
     store.dispatch(
       chooseColor({ id: e.target.dataset.id, code: e.target.value })

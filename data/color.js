@@ -20,7 +20,7 @@ const colorSlice = createSlice({
       });
     },
     chooseColor(state = initialState, { payload: { id, code } }) {
-      const objectToEdit = state.find((color) => color.id === id);
+      const objectToEdit = state.find((color) => color.id === payload);
       objectToEdit.code = code;
     },
   },
